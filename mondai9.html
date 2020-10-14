@@ -1,0 +1,30 @@
+<!-- Dùng vòng lặp While, viết hàm tính tổng các số chia hết cho 3 trong khoảng từ 0 đến n
+Test thử với n = 300, 500, 1000
+
+ -->
+
+<html>
+  <head> </head>
+  <body>
+<script>
+    function kiem_tra(n)
+    {
+        var sum = 0;
+        var i = 0;
+
+        while (i <= n)
+        {
+            if (i % 3 == 0){
+                sum = i+sum;
+            }
+
+            i++;
+        }
+        return sum;
+    }
+
+    var n = parseInt(prompt("Nhập số cần kiểm tra"));
+    document.write("Tong so chia het cho 3 tu 1 to " + n + " la " + kiem_tra(n));
+</script>
+  </body>
+</html>
