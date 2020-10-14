@@ -1,0 +1,44 @@
+<!--Trong siêu thị, các hàng hóa được đánh mã sản phẩm từ 1->9:
+1: Táo, 2: Dứa, 3: Xoài, 4: Dưa hấu, 5: Thịt lợn, 6: Thịt gà, 7: Thịt bò, 8: Rau bí, 9: Rau ngót
+Viết chương trình giúp nhập vào mã sản phẩm và hiển thị ra đúng tên sản phẩm tương ứng
+ -->
+
+<html>
+<head>
+</head>
+<p id="demo"></p>
+
+<script>
+var number=prompt("mã số thực phẩm",number);
+number = parseInt(number);
+switch (number) {
+  case 1:
+    number = "táo";
+    break;
+  case 2:
+    number = "Dứa";
+    break;
+  case 3:
+    number = "Xoài";
+    break;
+  case 4:
+    number = "Dưa Hấu";
+    break;
+  case 5:
+    number = "thịt lợn";
+    break;
+  case 6:
+    number = "thịt gà";
+    break;
+  case  7:
+    number = "thịt bò";
+    case  8:
+    number = "rau bí";
+    case  9:
+    number = "rau ngót";
+
+}
+document.getElementById("demo").innerHTML = "đây là " + number;
+</script>
+</body>
+</html>
