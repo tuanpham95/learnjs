@@ -1,0 +1,38 @@
+<!-- Viết chương trình gồm 1 form như hình, nhập vào 1 số nguyên n bất kì và in ra toàn bộ số nguyên tố trong khoảng từ 1 đến n
+
+ -->
+
+<html>
+  <head> </head>
+  <body>
+<label for="">Enter a number</label>
+    <br />
+    <input type="number" id="so" />
+    <button onclick="kiem_tra_snt()" class="gui">Print Result</button>
+    <br />
+    <p id="result"></p>
+    <p id="SNT"></p>
+  </body>
+  <script>
+    function kiem_tra_snt(n) {
+      var i = 0;
+      var num = 0;
+      var primeNumbers = "";
+      var n = document.getElementById("so").value;
+      for (i = 1; i <= n; i++) {
+        var counter = 0;
+        for (num = i; num >= 1; num--) {
+          if (i % num == 0) {
+            counter = counter + 1;
+          }
+        }
+        if (counter == 2) {
+          primeNumbers = primeNumbers + i + " ";
+        }
+      }
+      document.getElementById("result").innerHTML = "SNT  1 to " + n + " la:";
+      document.getElementById("SNT").innerHTML = primeNumbers;
+    }
+  </script>
+  </body>
+</html>
