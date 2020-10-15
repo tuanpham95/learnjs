@@ -4,41 +4,46 @@ Viết chương trình giúp nhập vào mã sản phẩm và hiển thị ra đ
  -->
 
 <html>
+
 <head>
 </head>
 <p id="demo"></p>
 
 <script>
-var number=prompt("mã số thực phẩm",number);
-number = parseInt(number);
-switch (number) {
-  case 1:
-    number = "táo";
-    break;
-  case 2:
-    number = "Dứa";
-    break;
-  case 3:
-    number = "Xoài";
-    break;
-  case 4:
-    number = "Dưa Hấu";
-    break;
-  case 5:
-    number = "thịt lợn";
-    break;
-  case 6:
-    number = "thịt gà";
-    break;
-  case  7:
-    number = "thịt bò";
-    case  8:
-    number = "rau bí";
-    case  9:
-    number = "rau ngót";
+    var number = prompt("mã số thực phẩm", number);
+    number = parseInt(number);
+    switch (number) {
+        case 1:
+            number = "táo";
+            break;
+        case 2:
+            number = "Dứa";
+            break;
+        case 3:
+            number = "Xoài";
+            break;
+        case 4:
+            number = "Dưa Hấu";
+            break;
+        case 5:
+            number = "thịt lợn";
+            break;
+        case 6:
+            number = "thịt gà";
+            break;
+        case 7:
+            number = "thịt bò";
+            break;
+        case 8:
+            number = "rau bí";
+            break;
+        case 9:
+            number = "rau ngót";
+            break;
 
-}
-document.getElementById("demo").innerHTML = "đây là " + number;
+    }
+    document.getElementById("demo").innerHTML = "đây là " + number;
 </script>
 </body>
+
 </html>
