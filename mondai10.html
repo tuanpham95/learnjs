@@ -1,0 +1,27 @@
+<!-- sử dụng function để giải quyết bài toán: nhập vào số tự nhiên n>0 và đưa ra giá trị của biểu thức A = 1/n + 2/n + 3/n + ... + n/n
+
+ -->
+
+<html>
+
+<head> </head>
+
+<body>
+    <script>
+        var n = prompt('nhap n:');
+
+        function check_number(number) {
+            count = 0;
+
+            if (n > 0) {
+                for (var i = 1; i <= number; i++) {
+                    count = count + (i / number);
+                }
+                document.write("gia tri bieu thuc la" + 　count.toString())
+            }
+        }
+        check_number(n);
+    </script>
+</body>
+
+</html>
